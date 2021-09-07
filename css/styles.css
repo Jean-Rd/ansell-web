@@ -59,6 +59,11 @@ a {
 	cursor: pointer;
 }
 
+
+.bici, .patin, .spa {
+	object-fit: contain;
+}
+
 .grid-card {
 	display: flex !important;
 	flex-wrap: wrap !important;
@@ -877,6 +882,11 @@ input[type='checkbox'] {
 	border-radius: 0.5rem;
 	background: transparent;
 }
+
+.card:nth-child(1){
+	transform: scale(1.1);
+}
+
 
 .cards-1 .card-image {
 	width: 6rem;
@@ -1700,6 +1710,12 @@ a:hover.back-to-top {
 	margin: auto;
 }
 
+.image-marca {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
 @media(min-width: 500px){
 	.image-banner {
 		width: 85%;
@@ -1718,7 +1734,7 @@ a:hover.back-to-top {
 @media(min-width: 1000px){
 	.image-banner {
 		width: 100%;
-		height: 600px;
+		height: 725px;
 		margin: auto;
 	}
 }
@@ -2165,7 +2181,7 @@ a:hover.back-to-top {
 
 	/* Services */
 	.cards-1 .card {
-		max-width: 21rem;
+		max-width: 20rem;
 	}
 
 	.cards-1 .col-lg-12 div.card:nth-child(3n+2) {
