@@ -75,7 +75,7 @@ a {
 	position: absolute;
 	transform: translateX(-50%);
 	left: 50%;
-	bottom: -15px;
+	bottom: 0px;
 }
 
 @media( min-width: 500px ){
@@ -97,7 +97,7 @@ a {
 @media( min-width: 900px ){
 
 	.banner {
-		height: 80vh;
+		height:100vh;
 	}
 
 	.banner a {
