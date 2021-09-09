@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +27,16 @@
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+    <link href="view/css/bootstrap.css" rel="stylesheet">
+    <link href="view/css/fontawesome-all.css" rel="stylesheet">
+    <link href="view/css/swiper.css" rel="stylesheet">
+	<link href="view/css/magnific-popup.css" rel="stylesheet">
+	<link href="view/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
       
 	<!-- Favicon  -->
-    <link rel="icon" href="assets/logo.png">
+    <link rel="icon" href="view/assets/logo.png">
 
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -53,7 +58,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="assets/ansell.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="view/assets/ansell.png" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,13 +83,26 @@
                     <a class="nav-link page-scroll" href="#preguntas">Tienes Algún Problema </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#request">Inscribirse</a>
-                </li>
+                <?php
+                    if(isset($_SESSION)) 
+                    { 
+                        echo '<li class="nav-item">
+                                <a class="nav-link page-scroll login" href="view/modulos/salir.php">Salir</a>
+                            </li>';
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll login" >Ingresar</a>
-                </li>
+                    }else
+                    {
+                        echo $_SESSION['nombre'];
+                        echo '<li class="nav-item">
+                                <a class="nav-link page-scroll" href="#request">Inscribirse</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link page-scroll login" >Ingresar</a>
+                            </li>';
+                    }
+                ?>
+                
 
             </ul>
             
@@ -100,14 +118,15 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container">
-                            <h1><span class="turquoise">La Aventura De Las 5 Gemas</span> Y El Guante de Poder</h1>
+                            
+                            <h1><span class="turquoise">La Aventura De Las 5 Gemas</span> Y El Guante de Poder </h1>
                             <p class="p-large">Unete a esta aventura donde los mejores heroes podran ganar grandiosos premios.</p>
                             <a class="btn-solid-lg page-scroll" href="#services">DESCUBRIR</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6 image-banner">
                         <div class="image-container">
-                            <img class="img-fluid" src="assets/banner.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/banner.jpg" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -130,7 +149,7 @@
                     <!-- Card -->
                     <a href="#booster">
                     <div class="card">
-                        <img class="card-image" src="assets/protest.png" alt="alternative">
+                        <img class="card-image" src="view/assets/protest.png" alt="alternative">
                         <div class="card-body">
                             <h4 class="card-title">Booster de Poder</h4>
                             <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the closest competitors</p>
@@ -142,7 +161,7 @@
                     <!-- Card -->
                     <a href="#premios">
                         <div class="card">
-                            <img class="card-image" src="assets/medal.png" alt="alternative">
+                            <img class="card-image" src="view/assets/medal.png" alt="alternative">
                             <div class="card-body">
                                 <h4 class="card-title">Premios</h4>
                                 <p>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
@@ -154,7 +173,7 @@
                     <!-- Card -->
                     <a class='login-puntos'>
                         <div class="card">
-                            <img class="card-image" src="assets/point.png" alt="alternative">
+                            <img class="card-image" src="view/assets/point.png" alt="alternative">
                             <div class="card-body">
                                 <h4 class="card-title">Tus Puntos</h4>
                                 <p>With all the information in place you will be presented with an action plan that your company needs to follow</p>
@@ -183,7 +202,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative">
+                        <img class="img-fluid" src="view/images/details-1-office-worker.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -198,7 +217,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-2-office-team-work.svg" alt="alternative">
+                        <img class="img-fluid" src="view/images/details-2-office-team-work.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -243,7 +262,7 @@
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                 <div class="col-lg-8">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative">
+                        <img class="img-fluid" src="view/images/details-lightbox-1.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -290,7 +309,7 @@
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                 <div class="col-lg-8">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative">
+                        <img class="img-fluid" src="view/images/details-lightbox-2.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -362,74 +381,70 @@
 
                     <!-- Request Form -->
                     <div class="form-container">
-                        <form id="requestForm" data-toggle="validator" data-focus="false">
+                        <form method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Nombre y Apellido</label>
+                                <input type="text" class="form-control-input" name="txtNombre" required>
+                                <label class="label-control" for="txtNombre">Nombre y Apellido</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rcedula" name="rcedula" required>
-                                <label class="label-control" for="rcedula">Cédula</label>
+                                <input type="text" class="form-control-input" name="txtCedula" required>
+                                <label class="label-control">Cédula</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rdistribuidor" name="rdistribuidor" required>
-                                <label class="label-control" for="rdistribuidor">Distribuido</label>
+                                <input type="text" class="form-control-input" name="txtDistribuidor" required>
+                                <label class="label-control">Distribuido</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rsede" name="rsede" required>
-                                <label class="label-control" for="rsede">Sede</label>
+                                <input type="text" class="form-control-input" name="txtSede" required>
+                                <label class="label-control">Sede</label>
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
+                                <input type="email" class="form-control-input" name="txtCorreo" required>
+                                <label class="label-control">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" id="rcelular" name="rcelular" required>
-                                <label class="label-control" for="rcelular">Celular</label>
+                                <input type="number" class="form-control-input" name="txtCelular" required>
+                                <label class="label-control">Celular</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rciudad" name="rciudad" required>
-                                <label class="label-control" for="rciudad">Ciudad</label>
+                                <input type="text" class="form-control-input" name="txtCiudad" required>
+                                <label class="label-control">Ciudad</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" id="rciudad" name="rciudad" required>
-                                <label class="label-control" for="rciudad">Asigna tu Clave</label>
+                                <input type="number" class="form-control-input" name="txtPass" required>
+                                <label class="label-control" for="txtPass">Asigna tu Clave</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" id="rcodigo" name="rcodigo" required>
-                                <label class="label-control" for="rcodigo">Código</label>
+                                <input type="number" class="form-control-input" id="txtCodigo" name="txtCodigo" required>
+                                <label class="label-control">Código</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <!-- <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Personal Loan">Starter</option>
-                                    <option class="select-option" value="Car Loan">Medium</option>
-                                    <option class="select-option" value="House Loan">Complete</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div> -->
                             <div class="form-group checkbox">
                                 <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Estoy de acuerdo con la <a id="pdf">Política de Privacidady los Términos & Condiciones</a>
                                 <div class="help-block with-errors"></div>
                                   
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">INSCRIBIRME</button>
+                                <input type="submit" class="form-control-submit-button" value="INSCRIBIRME">
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
                             </div>
                         </form>
+                        <?php 
+                            $dataRegistro = new CPrincipalController();
+
+                            $result = $dataRegistro->ctrRegistrarse();
+                        ?>
                     </div> <!-- end of form-container -->
                     <!-- end of request form -->
 
@@ -454,7 +469,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto1.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto1.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>EDGE 48-126</strong></p>
                         <!-- <p class="job-title">Business Developer</p> -->
@@ -465,7 +480,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto2.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto2.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>EDGE 82-133</strong></p>
                         <!-- <p class="job-title">Online Marketer</p> -->
@@ -476,7 +491,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto3.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto3.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>AlphaTec 09-928</strong></p>
                         <!-- <p class="job-title">Software Engineer</p> -->
@@ -487,7 +502,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto4.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto4.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>HyFlex 11-840</strong></p>
                         <!-- <p class="job-title">Product Manager</p> -->
@@ -497,7 +512,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto5.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto5.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>HyFlex 74-048</strong></p>
                         <!-- <p class="job-title">Business Developer</p> -->
@@ -507,7 +522,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto6.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto6.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>AlphaTec 4000-122</strong></p>
                         <!-- <p class="job-title">Business Developer</p> -->
@@ -517,7 +532,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto7.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto7.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>AlphaTec 2300 PLUS</strong></p>
                         <!-- <p class="job-title">Business Developer</p> -->
@@ -527,7 +542,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="assets/producto8.jpg" alt="alternative">
+                            <img class="img-fluid" src="view/assets/producto8.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>AlphaTec 16-650 </strong></p>
                         <!-- <p class="job-title">Business Developer</p> -->
@@ -547,7 +562,7 @@
             <div class="row">
                 <div class="col-lg-6" id="booster">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/testimonials-2-men-talking.svg" alt="alternative">
+                        <img class="img-fluid" src="view/images/testimonials-2-men-talking.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -630,7 +645,7 @@
                             <p class="best-value">Superhéroe Gema Dorada</p>
                         </div>
                         <div class="card-body premios">
-                            <img src="assets/premio1.jpg">
+                            <img src="view/assets/premio1.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -642,7 +657,7 @@
                     <div class="card">
                         
                         <div class="card-body premios">
-                            <img src="assets/premio2.jpg">
+                            <img src="view/assets/premio2.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -655,7 +670,7 @@
                         
                         <div class="card-body premios">
                             
-                            <img src="assets/premio3.jpg">
+                            <img src="view/assets/premio3.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -665,7 +680,7 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="card-body premios">
-                            <img src="assets/premio4.jpg">
+                            <img src="view/assets/premio4.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -675,7 +690,7 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="card-body premios">
-                            <img src="assets/premio5.jpg">
+                            <img src="view/assets/premio5.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -685,7 +700,7 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="card-body premios">
-                            <img src="assets/premio6.jpg">
+                            <img src="view/assets/premio6.jpg">
                             <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
                             </div>
@@ -782,7 +797,7 @@
     
     <div class="terminos animate__animated animate__fadeIn">
         <i id="termExit" class="far fa-times-circle"></i>
-        <iframe src="assets/TerminosCondiciones.pdf"></iframe>
+        <iframe src="view/assets/TerminosCondiciones.pdf"></iframe>
     </div>
 
     <div class="modalIniciar animate__animated animate__fadeIn">
@@ -794,15 +809,15 @@
 		<div class="container-login">
 
 			<div class="login-content">
-				<form class="form-log">
+				<form class="form-log" method="post">
 					<h2 class="title">Bienvenidos</h2>
 					<div class="input-div one">
 					<div class="i">
 							<i class="fas fa-user"></i>
 					</div>
 					<div class="div">
-							<h5>Código</h5>
-							<input type="number" class="input">
+							<h5>Usuario</h5>
+							<input type="number" class="input" name="txtUsuarioLogin">
 					</div>
 					</div>
 					<div class="input-div pass">
@@ -810,27 +825,31 @@
 							<i class="fas fa-lock"></i>
 					</div>
 					<div class="div">
-							<h5>Cédula</h5>
-							<input type="number" class="input">
+							<h5>Contraseña</h5>
+							<input type="number" class="input" name="txtPassLogin">
 					</div>
 					</div>
 					<a class="a-log">Olvidaste tu contraseña?</a>
-					<input type="submit" class="btn-log" >
+					<input type="submit" class="btn-log" value="ENTRAR">
 				</form>
+                <?php
+                    $dataLogin = new CPrincipalController();
+                    $resultLogin = $dataLogin->ctrLogin();
+                ?>
 			</div>
 		</div>
 	</div>
     	
     <!-- Scripts -->
-    <script src="js/terminos.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="view/js/terminos.js"></script>
+    <script src="view/js/login.js"></script>
+    <script src="view/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="view/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="view/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="view/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="view/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="view/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="view/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="view/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
