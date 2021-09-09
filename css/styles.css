@@ -128,10 +128,6 @@ a {
 
 
 
-.bici, .patin, .spa {
-	object-fit: contain;
-}
-
 .grid-card {
 	display: flex !important;
 	flex-wrap: wrap !important;
@@ -951,10 +947,6 @@ input[type='checkbox'] {
 	background: transparent;
 }
 
-.card:nth-child(1){
-	transform: scale(1.1);
-}
-
 
 .cards-1 .card-image {
 	width: 6rem;
@@ -978,7 +970,6 @@ input[type='checkbox'] {
 }
 
 .card .premios {
-	height: 488px;
 	padding: 0 !important;
 }
 
@@ -1143,7 +1134,8 @@ input[type='checkbox'] {
 
 .cards-2 .card {
 	display: block;
-	max-width: 19.5rem;
+	width: 19.5rem;
+	height: 19.5rem;
 	margin-right: auto;
 	margin-bottom: 6rem;
 	margin-left: auto;
@@ -1154,6 +1146,8 @@ input[type='checkbox'] {
 
 .cards-2 .card .card-body {
 	padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+	height: 100%;
+width: 100%;
 }
 
 .cards-2 .card .card-title {
@@ -1495,6 +1489,9 @@ input[type='checkbox'] {
 	margin-right: auto;
 	margin-bottom: 3.5rem;
 	margin-left: auto;
+	display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 /* Hover Animation */
@@ -1531,6 +1528,16 @@ input[type='checkbox'] {
 
 .basic-4 .team-member .job-title {
 	margin-bottom: 0.375rem;
+	display: flex;
+	width: 200px;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.basic-4 .team-member .job-title span {
+	display: inline-block;
+	padding: 2px 4px;
 }
 
 .basic-4 .fa-stack {
