@@ -3,9 +3,7 @@
    Created: June 2019
    Description: Master CSS file
 */
-#puntos {
-	display: none;
-}
+
 /*****************************************
 Table Of Contents:
 
@@ -1608,9 +1606,8 @@ align-items: center;
 	overflow: hidden;
 	height: 0;
 	margin-bottom: 4rem;
-	padding-bottom: 70%;
 	border-radius: 0.25rem;
-	height: 400px;
+	height: 450px;
 	overflow-y: auto;
 	background-color: transparent;
 }
@@ -1803,11 +1800,24 @@ a:hover.back-to-top {
 	box-sizing: border-box;
 }
 
+.image-puntos  {
+	height: 300px;
+	display: none;
+}
+.title-puntos{
+	margin-bottom: 3.5rem !important;
+}
+
+
 @media(min-width: 500px){
 	.image-banner {
 		width: 85%;
 		height: 500px;
 		margin: auto;
+	}
+	.image-puntos  {
+		height: 300px;
+		display: block;
 	}
 }
 @media(min-width: 700px){
