@@ -2071,6 +2071,7 @@ a:hover.back-to-top {
 		display: inline-block;
 		max-width: 17.125rem;
 		vertical-align: top;
+		height: 360px;
 	}
 
 	.cards-1 .col-lg-12 div.card:nth-child(3n+2) {
