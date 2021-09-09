@@ -61,6 +61,7 @@ a {
 	cursor: pointer;
 }
 
+
 .banner {
 	height: 50vh;
 	width: 100%;
@@ -78,6 +79,7 @@ a {
 	transform: translateX(-50%);
 	left: 50%;
 	bottom: 0px;
+	min-width: 263px;
 }
 
 @media( min-width: 500px ){
@@ -103,7 +105,7 @@ a {
 	}
 
 	.banner a {
-		width: 150px;
+		width: auto;
 		text-align: center;
 	}
 
@@ -123,7 +125,7 @@ a {
 		height: 95vh;
 	}
 	.banner a {
-		width: 200px;
+		width: auto;
 	}
 
 }
