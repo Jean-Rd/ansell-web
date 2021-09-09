@@ -53,7 +53,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="assets/ansell.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="view/assets/ansell.png" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preguntas">Tienes alguna duda? </a>
+                    <a class="nav-link page-scroll" href="#preguntas">Tienes dudas? </a>
                 </li>
 
                 <li class="nav-item">
@@ -118,7 +118,7 @@
                     <!-- Card -->
                     <a href="#booster">
                     <div class="card ">
-                        <img class="card-image" src="view/assets/protest.png" alt="alternative">
+                        <img class="card-image" src="view/assets/booster.png" alt="alternative">
                         <div class="card-body">
                             <h4 class="card-title">Booster de Poder</h4>
                             <p>Potencializadores que le ayudarán a acumular más puntos con mayor rapidez
@@ -190,46 +190,8 @@
     <!-- end of details 1 -->
 
     
-    <!-- Details 2 -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="view/assets/dron.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>
-                            Recompensa para los 10 héroes de la avanzada
-                        </h2>
-                   
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <!-- <i class="fas fa-check"></i> -->
-                                <div class="media-body">
-                                    Los dioses recompensarán a los 10 luchadores que se conviertan en héroes, al estar a la delantera de esta aventura.
-                                    <br>
-                                    Sé uno de los 10 primeros en el ranking de puntos al corte del 30 de noviembre de 2021 y recibirás automáticamente:
-                                    <br>
-                                    <br>
-                                    1) EL NECTAR DE LOS DIOSES <br>
-                                    2) PODRÁS PARTICIPAR POR LLEVARTE UN "DRON GUÍA"
-                                    <br>
-                                    <br>
-                                    !Disfruta de esta aventura y sé uno de los ganadores!
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">REGLAS DE LA AVENTURA</a> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
+    
     <!-- end of details 2 -->
-
     <!-- Details Lightboxes -->
     <!-- Details Lightbox 1 -->
 	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
@@ -238,9 +200,9 @@
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                
                 <div class="col-lg-12">
-                    <h3>La Gran Aventura</h3>
+                    <h3>Conoce todo sobre La Aventura de las 5 gemas de poder del guante de Ansell.</h3>
                     <hr>
-                    <h5>Las 5 Gemas Del Poder</h5>
+                    <!-- <h5>Las 5 Gemas Del Poder</h5> -->
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
                             <i class="fas fa-check"></i><div class="media-body">
@@ -343,156 +305,6 @@
     </div> <!-- end of lightbox-basic -->
     <!-- end of details lightbox 1 -->
 
-    <!-- Details Lightbox 2 -->
-	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="view/images/details-lightbox-2.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Los Secretos de la Aventura</h3>
-                    <hr>
-                    <h5>Obtén puntos de ventaja</h5>
-                  
-                    <p>
-                        Conoce los secretos de la aventura para ser uno de los Superhéroes ganadores.
-                    </p>
-
-
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">ACUMULAR PUNTOS, por cada unidad de producto vendido, tus puntos aumentan en 1.</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">ARMADURA DE PODER, cada venta de trajes AlphaTec, tus puntos se aumentan en 3.</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">ORÁCULO, ingresa a la plataforma al recibir el llamado vía mail, mira el video, realiza la prueba de conocimiento y gana de ventaja 20 puntos.</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">RAYOS DE LUZ, durante la misión vas a recibir otros Booster sorpresa, debes estar atento a tu correo y tu celular. Estos potencializadores serán activados por pocos días.</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">RECOMPENSA PARA LOS HÉROES, los 5 Superhéroes ganadores son aquellos que ocupen los 5 primeros puestos en el ranking hasta el 30 de enero del 2022.</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRÁS</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 2 -->
-    <!-- end of details lightboxes -->
-
-    <!-- Request -->
-    <div id="request" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Inscríbete Aquí</h2>
-                        <p>Solo los mejores luchadores harán parte de la aventura de las 5 gemas del poder.
-                            Si tú has recibido una invitación digita el código y únete a la misión.
-                            Al registrarte tendrás ingreso a la plataforma donde podrás hacer seguimiento todos los puntos que consigas mes a mes en la aventura.<br>
-                            La información se actualizará pasado los 15 soles de cada mes.
-                        </p>
-                        <p class="text-muted p-small">
-                            *Al diligenciar está información con sus datos, usted está aceptando nuestra
-                            Política de manejo de datos desarrolladas de conformidad con lo dispuesto en la Ley 
-                            Estatutoria 1581 de 2012. Por lo cual se dictan disposiciones generales para la protección 
-                            de datos personales por el decreto 1377 de 2013, en las cuales establecemos el manejo de su 
-                            información solo para envíos acorde y relativos a nuestro core de negocio y afines. Usted puede en 
-                            cualquier momento actualizar su información, cambiar sus preferencias y solicitar ser dado de baja 
-                            de nuestras bases de datos enviando un correo electrónico a elguantedepoderansell@gmail.com con su requerimiento. 
-                            De igual forma puede solicitar a este mismo correo electrónico el detalle de nuestras Políticas de manejo de datos.
-                        </p>
-                        
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-
-                    <!-- Request Form -->
-                    <div class="form-container">
-                        <form id="requestForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Nombre y Apellido</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rcedula" name="rcedula" required>
-                                <label class="label-control" for="rcedula">Cédula</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rdistribuidor" name="rdistribuidor" required>
-                                <label class="label-control" for="rdistribuidor">Distribuidor</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rsede" name="rsede" required>
-                                <label class="label-control" for="rsede">Sede</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control-input" id="rcelular" name="rcelular" required>
-                                <label class="label-control" for="rcelular">Celular</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rciudad" name="rciudad" required>
-                                <label class="label-control" for="rciudad">Ciudad</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control-input" id="rciudad" name="rciudad" required>
-                                <label class="label-control" for="rciudad">Asigna tu Clave</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control-input" id="rcodigo" name="rcodigo" required>
-                                <label class="label-control" for="rcodigo">Código de Inscripción</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <!-- <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Personal Loan">Starter</option>
-                                    <option class="select-option" value="Car Loan">Medium</option>
-                                    <option class="select-option" value="House Loan">Complete</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div> -->
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Estoy de acuerdo con la <a id="pdf">Política de Privacidady los Términos & Condiciones</a>
-                                <div class="help-block with-errors"></div>
-                                  
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SI, ACEPTO LA AVENTURA</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div> <!-- end of form-container -->
-                    <!-- end of request form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of request -->
 
     <!-- About -->
     <div id="about" class="basic-4">
@@ -594,6 +406,56 @@
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
     <!-- end of about -->
+
+
+    <!-- Details Lightbox 2 -->
+	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="view/images/details-lightbox-2.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Los Secretos de la Aventura</h3>
+                    <hr>
+                    <h5>Obtén puntos de ventaja</h5>
+                  
+                    <p>
+                        Conoce los secretos de la aventura para ser uno de los Superhéroes ganadores.
+                    </p>
+
+
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">ACUMULAR PUNTOS, por cada unidad de producto vendido, tus puntos aumentan en 1.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">ARMADURA DE PODER, cada venta de trajes AlphaTec, tus puntos se aumentan en 3.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">ORÁCULO, ingresa a la plataforma al recibir el llamado vía mail, mira el video, realiza la prueba de conocimiento y gana de ventaja 20 puntos.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">RAYOS DE LUZ, durante la misión vas a recibir otros Booster sorpresa, debes estar atento a tu correo y tu celular. Estos potencializadores serán activados por pocos días.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">RECOMPENSA PARA LOS HÉROES, los 5 Superhéroes ganadores son aquellos que ocupen los 5 primeros puestos en el ranking hasta el 30 de enero del 2022.</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRÁS</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 2 -->
+    <!-- end of details lightboxes -->
+
+  
+
+    
 
     <!-- Testimonials -->
     <div class="slider-2">
@@ -747,10 +609,217 @@
         </div> <!-- end of container -->
     </div> <!-- end of cards-2 -->
     <!-- end of pricing -->
+    <!-- Details 2 -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="view/assets/dron.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>
+                            Recompensa para los 10 héroes de la avanzada
+                        </h2>
+                   
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <!-- <i class="fas fa-check"></i> -->
+                                <div class="media-body">
+                                    Los dioses recompensarán a los 10 luchadores que se conviertan en héroes, al estar a la delantera de esta aventura.
+                                    <br>
+                                    Sé uno de los 10 primeros en el ranking de puntos al corte del 30 de noviembre de 2021 y recibirás automáticamente:
+                                    <br>
+                                    <br>
+                                    1) EL NECTAR DE LOS DIOSES <br>
+                                    2) PODRÁS PARTICIPAR POR LLEVARTE UN "DRON GUÍA"
+                                    <br>
+                                    <br>
+                                    !Disfruta de esta aventura y sé uno de los ganadores!
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">REGLAS DE LA AVENTURA</a> -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
 
-    
+      <!-- Request -->
+      <div id="request" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Inscríbete Aquí</h2>
+                        <p>Solo los mejores luchadores harán parte de la aventura de las 5 gemas del poder.
+                            Si tú has recibido una invitación digita el código y únete a la misión.
+                            Al registrarte tendrás ingreso a la plataforma donde podrás hacer seguimiento todos los puntos que consigas mes a mes en la aventura.<br>
+                            La información se actualizará pasado los 15 soles de cada mes.
+                        </p>
+                        <p class="text-muted p-small">
+                            *Al diligenciar está información con sus datos, usted está aceptando nuestra
+                            Política de manejo de datos desarrolladas de conformidad con lo dispuesto en la Ley 
+                            Estatutoria 1581 de 2012. Por lo cual se dictan disposiciones generales para la protección 
+                            de datos personales por el decreto 1377 de 2013, en las cuales establecemos el manejo de su 
+                            información solo para envíos acorde y relativos a nuestro core de negocio y afines. Usted puede en 
+                            cualquier momento actualizar su información, cambiar sus preferencias y solicitar ser dado de baja 
+                            de nuestras bases de datos enviando un correo electrónico a elguantedepoderansell@gmail.com con su requerimiento. 
+                            De igual forma puede solicitar a este mismo correo electrónico el detalle de nuestras Políticas de manejo de datos.
+                        </p>
+                        
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Request Form -->
+                    <div class="form-container">
+                        <form id="requestForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Nombre y Apellido</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rcedula" name="rcedula" required>
+                                <label class="label-control" for="rcedula">Cédula</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rdistribuidor" name="rdistribuidor" required>
+                                <label class="label-control" for="rdistribuidor">Distribuidor</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rsede" name="rsede" required>
+                                <label class="label-control" for="rsede">Sede</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control-input" id="rcelular" name="rcelular" required>
+                                <label class="label-control" for="rcelular">Celular</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rciudad" name="rciudad" required>
+                                <label class="label-control" for="rciudad">Ciudad</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control-input" id="rciudad" name="rciudad" required>
+                                <label class="label-control" for="rciudad">Asigna tu Clave</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control-input" id="rcodigo" name="rcodigo" required>
+                                <label class="label-control" for="rcodigo">Código de Inscripción</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- <div class="form-group">
+                                <select class="form-control-select" id="rselect" required>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value="Personal Loan">Starter</option>
+                                    <option class="select-option" value="Car Loan">Medium</option>
+                                    <option class="select-option" value="House Loan">Complete</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div> -->
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Estoy de acuerdo con la <a id="pdf">Política de Privacidady los Términos & Condiciones</a>
+                                <div class="help-block with-errors"></div>
+                                  
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">SI, ACEPTO LA AVENTURA</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div> <!-- end of form-container -->
+                    <!-- end of request form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of request -->
+
     <!-- Contact -->
-    <div id="puntos" class="form-2">
+    <div id="contact" class="form-2">
+        <div class="container" id="preguntas">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>¿Tienes dudas?</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Si tienes dudas sobre esta aventura, diligencia el formulario y estaremos 
+                            dando respuesta en el menos tiempo posible.
+                        </li>
+                        
+                        
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-lg-6">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nombre y Apellido</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control-input" id="cnumber" required>
+                            <label class="label-control" for="cnumber">Teléfono</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Tu mensaje</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>He leído y acepto la <a id="pdf2">Política de Privacidady los Términos & Condiciones</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">ENVIAR MENSAJE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+      <!-- Contact -->
+      <div id="puntos" class="form-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -871,70 +940,6 @@
                         </p>
                     </div>
                 </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
-
-    <!-- Contact -->
-    <div id="contact" class="form-2">
-        <div class="container" id="preguntas">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <h2>¿Tienes dudas?</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address">Si tienes dudas sobre esta aventura, diligencia el formulario y estaremos 
-                            dando respuesta en el menos tiempo posible.
-                        </li>
-                        
-                        
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row d-flex justify-content-center">
-                
-                <div class="col-lg-6">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Nombre y Apellido</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control-input" id="cnumber" required>
-                            <label class="label-control" for="cnumber">Teléfono</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        
-                        
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Tu mensaje</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>He leído y acepto la <a id="pdf2">Política de Privacidady los Términos & Condiciones</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">ENVIAR MENSAJE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
