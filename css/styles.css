@@ -3,7 +3,9 @@
    Created: June 2019
    Description: Master CSS file
 */
-
+#puntos {
+	display: none;
+}
 /*****************************************
 Table Of Contents:
 
@@ -1606,6 +1608,14 @@ align-items: center;
 	margin-bottom: 4rem;
 	padding-bottom: 70%;
 	border-radius: 0.25rem;
+	height: 400px;
+	overflow-y: auto;
+	background-color: transparent;
+}
+
+.form-2 .map-responsive img {
+	width: 100%;
+	height: inherit
 }
 
 .form-2 .map-responsive iframe {
