@@ -1,8 +1,3 @@
-<?php
-
-session_start();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +53,7 @@ session_start();
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="view/assets/ansell.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="assets/ansell.png" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +65,7 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#aventura">La Aventura</a>
@@ -80,29 +75,20 @@ session_start();
                 </li>
                
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preguntas">Tienes Algún Problema </a>
+                    <a class="nav-link page-scroll" href="#premios">Recompensas </a>
                 </li>
 
-                <?php
-                    if(isset($_SESSION)) 
-                    { 
-                        echo '<li class="nav-item">
-                                <a class="nav-link page-scroll login" href="view/modulos/salir.php">Salir</a>
-                            </li>';
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preguntas">Tienes alguna duda? </a>
+                </li>
 
-                    }else
-                    {
-                        echo $_SESSION['nombre'];
-                        echo '<li class="nav-item">
-                                <a class="nav-link page-scroll" href="#request">Inscribirse</a>
-                            </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#request">Inscribirse</a>
+                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll login" >Ingresar</a>
-                            </li>';
-                    }
-                ?>
-                
+                <li class="nav-item">
+                    <a class="nav-link page-scroll login" >Ingresar</a>
+                </li>
 
             </ul>
             
@@ -111,29 +97,12 @@ session_start();
     <!-- end of navigation -->
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            
-                            <h1><span class="turquoise">La Aventura De Las 5 Gemas</span> Y El Guante de Poder </h1>
-                            <p class="p-large">Unete a esta aventura donde los mejores heroes podran ganar grandiosos premios.</p>
-                            <a class="btn-solid-lg page-scroll" href="#services">DESCUBRIR</a>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6 image-banner">
-                        <div class="image-container">
-                            <img class="img-fluid" src="view/assets/banner.jpg" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+    <header>
+        <div class="banner">
+            <img src="view/assets/banner.jpg">
+            <a class="btn-solid-lg page-scroll banner-btn" href="#services">Top Secret para luchadores</a>
+        </div>
+    </header>
 
 
 
@@ -148,11 +117,13 @@ session_start();
 
                     <!-- Card -->
                     <a href="#booster">
-                    <div class="card">
+                    <div class="card ">
                         <img class="card-image" src="view/assets/protest.png" alt="alternative">
                         <div class="card-body">
                             <h4 class="card-title">Booster de Poder</h4>
-                            <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the closest competitors</p>
+                            <p>Potencializadores que le ayudarán a acumular más puntos con mayor rapidez
+                                y así lograr la delantera en esta aventura.
+                            </p>
                         </div>
                     </div>
                     </a>
@@ -163,8 +134,11 @@ session_start();
                         <div class="card">
                             <img class="card-image" src="view/assets/medal.png" alt="alternative">
                             <div class="card-body">
-                                <h4 class="card-title">Premios</h4>
-                                <p>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
+                                <h4 class="card-title">Recompensas</h4>
+                                <p>
+                                    Conoce los premios que puedes ganar siendo uno de los superhéroes
+                                    que recupera una de las 5 gemas.
+                                </p>
                             </div>
                         </div>
                     </a>
@@ -176,7 +150,10 @@ session_start();
                             <img class="card-image" src="view/assets/point.png" alt="alternative">
                             <div class="card-body">
                                 <h4 class="card-title">Tus Puntos</h4>
-                                <p>With all the information in place you will be presented with an action plan that your company needs to follow</p>
+                                <p>
+                                    Haz seguimiento a los puntos que acumulas mes a mes y conoce que tan adelante
+                                    vas en está aventura.
+                                </p>
                             </div>
                         </div>
                     </a>
@@ -195,9 +172,11 @@ session_start();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>La Aventura De Las 5 Gemas Del Poder</h2>
-                        <p>Premiamos a los 10 mejores heroes en el segundo mes de consurso y al final los 5 que encuentren una de las 5 gemas se convertiran en uno de los Superheroes ganadores de uno de los premios.</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ACERCA DE LA AVENTURA</a>
+                        <h2>Conoce todo sobre La Aventura de las 5 gemas de poder del guante Ansell.</h2>
+                        <p>
+                            Conoce todos los secretos de esta aventura. ¿Cómo acumular puntos? ¿Cuales son las recompensas?
+                        </p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">AQUÍ TODOS LOS DETALLES</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -217,36 +196,33 @@ session_start();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="view/images/details-2-office-team-work.svg" alt="alternative">
+                        <img class="img-fluid" src="view/assets/dron.jpg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Ente Más Puntos Más Oportunidades De Ganar.</h2>
+                        <h2>
+                            Recompensa para los 10 héroes de la avanzada
+                        </h2>
                    
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body">1er. Superhéroe Gema Dorada, viaje al mar de los 7 colores para 2 personas todo pago.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body">2do. Superhéroe Gema Plateada, scooter de velocidad.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body">3er. Superhéroe Gema Verde, ruedas de gloria, bicicleta.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body">4to. Superhéroe Gema Verde, noche cósmica, Glamping para 2 personas todo pagado.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body">5to. Superhéroe Gema Naranja, experiencia de recarga en Spa de lujo.</div>
+                                <!-- <i class="fas fa-check"></i> -->
+                                <div class="media-body">
+                                    Los dioses recompensarán a los 10 luchadores que se conviertan en héroes, al estar a la delantera de esta aventura.
+                                    <br>
+                                    Sé uno de los 10 primeros en el ranking de puntos al corte del 30 de noviembre de 2021 y recibirás automáticamente:
+                                    <br>
+                                    <br>
+                                    1) EL NECTAR DE LOS DIOSES <br>
+                                    2) PODRÁS PARTICIPAR POR LLEVARTE UN "DRON GUÍA"
+                                    <br>
+                                    <br>
+                                    !Disfruta de esta aventura y sé uno de los ganadores!
+                                </div>
                             </li>
                         </ul>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">REGLAS DE LA AVENTURA</a>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">REGLAS DE LA AVENTURA</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -260,42 +236,107 @@ session_start();
         <div class="container">
             <div class="row">
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="view/images/details-lightbox-1.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
+               
+                <div class="col-lg-12">
                     <h3>La Gran Aventura</h3>
                     <hr>
                     <h5>Las 5 Gemas Del Poder</h5>
-                  
-                    <p>Inscribete a esta gran aventura donde podras ser uno de 
-                        los Superheroes ganadores de uno de los premios.
-                    </p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">Hace unos meses en una noche oscura y lluviosa, nós informaron del robo del guante de poder de Ansell
-                                , ellas son las que aseguran la seguridad de miles de trabajadores en todo el mundo.</div>
+                            <i class="fas fa-check"></i><div class="media-body">
+                                Hace unos meses en una noche oscura y lluviosa, nos informarón del robo del guante de poder de Ansell. Ellas son las que aseguran la seguridad de los trabajadores de miles compañias en el mundo, sin ellas, las manos de los trabajadores del mundo estan desprotegidas.
+                            </div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">Hemos reunido a los mejores luchadores para esta aventura, los 5 jugadores que encuentren las 5 gemas, serán recompensados.</div>
+                            <i class="fas fa-check"></i><div class="media-body">Hemos reunido a los mejores luchadores para esta Aventura, para recuperarlas, los 5 Superhéroes que logran recuperar las 5 Gemas, serán recompensados con fantásticos premios.
+
+                            </div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">Su misión sera vender la mayor cantidad de productos Ansell.</div>
+                            <i class="fas fa-check"></i><div class="media-body">
+                                Para ellos su misión será lograr la mayor cantidad de puntos, vendiendo los productos Ansell® participantes del programa, cada punto, los acercará más a una de las Gemas. Se convertirán en puntos cada unidad de producto que vendas entre el 1 de octubre de 2021 al 30 de enero de 2022.
+                            </div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">En esta misión los dioses te acomopañaran, podras encontrar ayuda para logras mas puntos. Como el Booster del Poder, potencializadores....</div>
+                            <i class="fas fa-check"></i><div class="media-body">En esta travesia los dioses los acompañarán, por eso encontras ayudas para lograr más puntos, los Booster de poder, potencializadores que te ayudarán a acumular más puntos con mayor rapidez y así logres la delantera y ganes uno de los fantásticos premios.</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">Incribete
-                                para iniciar esta misión.</div>
+                            <i class="fas fa-check"></i><div class="media-body">Inscríbete para iniciar esta misión, eres uno de los mejores luchadores, de seguro estarás en el ranking de los 5 Superhéroes que más puntos acumulen y quedate con una de las recompensas.
+
+                            </div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">Los 5 mejores jugadores seran ganadores de las recompensas.</div>
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b class="turquoise">COMO ACUMULAR PUNTOS:</b><br>
+                                Por cada unidad de producto vendido, acumulas 1 punto.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b class="turquoise">CUALES SON LOS BOOSTER DE PODER:</b><br>
+                                <b >Armadura de poder:</b>
+                                    Cada unidad de ventas de trajes AlphaTec, se multiplicará por 3. Una ventaja que no puedes perder para ser uno de los ganadores.
+                                <br>
+                                <b >Oráculo:</b>
+                                    Ingresa a la plataforma al recibir el llamado via mail, mira el video, realiza la prueba de conocimiento y gana la ventaja de 20 puntos más por cada prueba en la que participes. Este Booster de poder será habilitado solo cuando la energia lunar se alíníe, así que te informaremos a tu mail, cuando podrás acceder a él. Está atento.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b class="turquoise">RAYOS DE LUZ:</b><br>
+                                Durante la misión vas a recibir otros Booster sorpresa...<br>
+                                Debes estar atento a tu correo y a tu celular...<br>
+                                Estos potencializadores serán activados por pocos días.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b class="turquoise">LA RECOMPENSA PARA LOS HÉROES!</b>
+                            </div>
+                        </li> 
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                Los 5 super Héroes que al final de la Aventura, ocupen los 5 primeros puestos del ranking de puntos al corte del 30 de enero de 2022, habrán recuperado una de las gemas y así serán ganadores de uno de las recompensas. 
+                            </div>
+                        </li>  
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>1er Superhéroe Gema Dorada: </b>
+                                    Viaje al mar de los 7 colores para 2 personas todo pago.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>2do Superhéroe Gema Plateada: </b>
+                                    Scooter de velocidad.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>3er Superhéroe Gema Verde: </b>
+                                    Ruedas de Gloria, Biciclete.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>4to Superhéroe Gema Verde: </b>
+                                    Noche cósmica, Glamping para 2 personas todo pago*
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>5to Superhéroe Gema Naranja: </b>
+                                    Experiencia de recarga en Spa de lujo.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">
+                                <b>Además!!!</b><br>
+                                Los 10 héroes de la avanzada recibirán la primera recompensa, el Nectar de los Dioses para cada uno y participarán en la Rifa de un Dron que les servirá de guía en la misión. Estos Héroes de la avanzada corresponde a los 10 primeros del ranking en puntos al 30 de noviembre del 2021.
+                            </div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRAS</a>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRÁS</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -315,7 +356,7 @@ session_start();
                 <div class="col-lg-4">
                     <h3>Los Secretos de la Aventura</h3>
                     <hr>
-                    <h5>Obten puntos de ventaja</h5>
+                    <h5>Obtén puntos de ventaja</h5>
                   
                     <p>
                         Conoce los secretos de la aventura para ser uno de los Superhéroes ganadores.
@@ -327,19 +368,19 @@ session_start();
                             <i class="fas fa-check"></i><div class="media-body">ACUMULAR PUNTOS, por cada unidad de producto vendido, tus puntos aumentan en 1.</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">ARMADURA DE PODER, cada venta de trajesAlphaTec, tus puntos se aumentan en 3.</div>
+                            <i class="fas fa-check"></i><div class="media-body">ARMADURA DE PODER, cada venta de trajes AlphaTec, tus puntos se aumentan en 3.</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">ORÁCULO, ingresa a la plataforma al recibir el llamado via mail, mira el video, realiza la prueba de conocimiento y gana de ventaja 20 puntos.</div>
+                            <i class="fas fa-check"></i><div class="media-body">ORÁCULO, ingresa a la plataforma al recibir el llamado vía mail, mira el video, realiza la prueba de conocimiento y gana de ventaja 20 puntos.</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">RAYOS DE LUZ, durante la misión vas a recibir otros Booster sorpresa, debes estar atento a tu correo y tu celular. Estos potencializadores serán activados por pocos dias.</div>
+                            <i class="fas fa-check"></i><div class="media-body">RAYOS DE LUZ, durante la misión vas a recibir otros Booster sorpresa, debes estar atento a tu correo y tu celular. Estos potencializadores serán activados por pocos días.</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body">RECOMPENSA PARA LOS HÉROES, los 5 super heroes ganadores son aquellos que ocupen los 5 primeros puestos en el ranking hasta el 30 de enero del 2022.</div>
+                            <i class="fas fa-check"></i><div class="media-body">RECOMPENSA PARA LOS HÉROES, los 5 Superhéroes ganadores son aquellos que ocupen los 5 primeros puestos en el ranking hasta el 30 de enero del 2022.</div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRAS</a>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">INSCRIBIRME</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">ATRÁS</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -353,98 +394,97 @@ session_start();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Inscribete Aqui</h2>
-                        <p>Solo los mejores luchadores haran parte de la aventura de las 5 gemas del poder.
-                            Si tu has recibido una invitación digita el código y únete a la misión.
-                            Al registrarte tendras ingreso a la plataforma donde podras hacer seguimiento todos los puntos que consiguas mes a mes en la competencia. </p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Automate your marketing</strong> activities and get results today</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Interact with all your</strong> targeted customers at a personal level</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Convince them to buy</strong> your company's awesome products</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Save precious time</strong> and invest it where you need it the most</div>
-                            </li>
-                        </ul>
+                        <h2>Inscríbete Aquí</h2>
+                        <p>Solo los mejores luchadores harán parte de la aventura de las 5 gemas del poder.
+                            Si tú has recibido una invitación digita el código y únete a la misión.
+                            Al registrarte tendrás ingreso a la plataforma donde podrás hacer seguimiento todos los puntos que consigas mes a mes en la aventura.<br>
+                            La información se actualizará pasado los 15 soles de cada mes.
+                        </p>
+                        <p class="text-muted p-small">
+                            *Al diligenciar está información con sus datos, usted está aceptando nuestra
+                            Política de manejo de datos desarrolladas de conformidad con lo dispuesto en la Ley 
+                            Estatutoria 1581 de 2012. Por lo cual se dictan disposiciones generales para la protección 
+                            de datos personales por el decreto 1377 de 2013, en las cuales establecemos el manejo de su 
+                            información solo para envíos acorde y relativos a nuestro core de negocio y afines. Usted puede en 
+                            cualquier momento actualizar su información, cambiar sus preferencias y solicitar ser dado de baja 
+                            de nuestras bases de datos enviando un correo electrónico a elguantedepoderansell@gmail.com con su requerimiento. 
+                            De igual forma puede solicitar a este mismo correo electrónico el detalle de nuestras Políticas de manejo de datos.
+                        </p>
+                        
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
 
                     <!-- Request Form -->
                     <div class="form-container">
-                        <form method="post">
+                        <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="txtNombre" required>
-                                <label class="label-control" for="txtNombre">Nombre y Apellido</label>
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Nombre y Apellido</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="txtCedula" required>
-                                <label class="label-control">Cédula</label>
+                                <input type="text" class="form-control-input" id="rcedula" name="rcedula" required>
+                                <label class="label-control" for="rcedula">Cédula</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="txtDistribuidor" required>
-                                <label class="label-control">Distribuido</label>
+                                <input type="text" class="form-control-input" id="rdistribuidor" name="rdistribuidor" required>
+                                <label class="label-control" for="rdistribuidor">Distribuidor</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="txtSede" required>
-                                <label class="label-control">Sede</label>
+                                <input type="text" class="form-control-input" id="rsede" name="rsede" required>
+                                <label class="label-control" for="rsede">Sede</label>
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" class="form-control-input" name="txtCorreo" required>
-                                <label class="label-control">Email</label>
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" name="txtCelular" required>
-                                <label class="label-control">Celular</label>
+                                <input type="number" class="form-control-input" id="rcelular" name="rcelular" required>
+                                <label class="label-control" for="rcelular">Celular</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="txtCiudad" required>
-                                <label class="label-control">Ciudad</label>
+                                <input type="text" class="form-control-input" id="rciudad" name="rciudad" required>
+                                <label class="label-control" for="rciudad">Ciudad</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" name="txtPass" required>
-                                <label class="label-control" for="txtPass">Asigna tu Clave</label>
+                                <input type="number" class="form-control-input" id="rciudad" name="rciudad" required>
+                                <label class="label-control" for="rciudad">Asigna tu Clave</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control-input" id="txtCodigo" name="txtCodigo" required>
-                                <label class="label-control">Código</label>
+                                <input type="number" class="form-control-input" id="rcodigo" name="rcodigo" required>
+                                <label class="label-control" for="rcodigo">Código de Inscripción</label>
                                 <div class="help-block with-errors"></div>
                             </div>
+                            <!-- <div class="form-group">
+                                <select class="form-control-select" id="rselect" required>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value="Personal Loan">Starter</option>
+                                    <option class="select-option" value="Car Loan">Medium</option>
+                                    <option class="select-option" value="House Loan">Complete</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div> -->
                             <div class="form-group checkbox">
                                 <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Estoy de acuerdo con la <a id="pdf">Política de Privacidady los Términos & Condiciones</a>
                                 <div class="help-block with-errors"></div>
                                   
                             </div>
                             <div class="form-group">
-                                <input type="submit" class="form-control-submit-button" value="INSCRIBIRME">
+                                <button type="submit" class="form-control-submit-button">SI, ACEPTO LA AVENTURA</button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
                             </div>
                         </form>
-                        <?php 
-                            $dataRegistro = new CPrincipalController();
-
-                            $result = $dataRegistro->ctrRegistrarse();
-                        ?>
                     </div> <!-- end of form-container -->
                     <!-- end of request form -->
 
@@ -460,7 +500,11 @@ session_start();
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Productos Participantes</h2>
-                    <p class="p-heading p-large">Estos son los productos Ansell participantes, que te daran fuerza y puntos para ganar esta aventura. Entre más puntos más oportunidades de ser uno de los Superhéroes ganadores.</p>
+                    <p class="p-heading p-large">
+                        Estos son los productos y las referencias de Ansell participantes en el programa,
+                        al vender unidades de estos productos acumularás puntos en esta aventura. Entre más puntos 
+                        más oportunidades de ser uno de los superhéroes y ganar increíbles premios.
+                    </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -469,10 +513,22 @@ session_start();
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto1.jpg" alt="alternative">
+                            <img class="img-fluid image-marca" src="view/assets/hyflex.jpg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>EDGE 48-126</strong></p>
-                        <!-- <p class="job-title">Business Developer</p> -->
+                        <p class="job-title text-small">
+                            <span>11-200</span>
+                            <span>11-210</span>
+                            <span>11-250</span>
+                            <span>11-251</span>
+                            <span>11-270</span>
+                            <span>11-801</span>
+                            <span>11-816</span>
+                            <span>11-849</span>
+                            <span>11-926</span>
+                            <span>11-939</span>
+                            <span>70-118</span>
+                            <span>74-048</span>
+                        </p>
                        
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
@@ -480,10 +536,12 @@ session_start();
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto2.jpg" alt="alternative">
+                            <img class="img-fluid image-marca" src="view/assets/activarmr.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
-                        <p class="p-large"><strong>EDGE 82-133</strong></p>
-                        <!-- <p class="job-title">Online Marketer</p> -->
+                        <p class="job-title text-small">
+                            <span>80-409</span>
+                            <span>80-813</span>
+                        </p>
                         
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
@@ -491,10 +549,22 @@ session_start();
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto3.jpg" alt="alternative">
+                            <img class="img-fluid image-marca" src="view/assets/alphatec.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
-                        <p class="p-large"><strong>AlphaTec 09-928</strong></p>
-                        <!-- <p class="job-title">Software Engineer</p> -->
+                        <p class="job-title">
+                            <span>37-300</span>
+                            <span>58-128</span>
+                            <span>58-735</span>
+                            <span>37-155</span>
+                            <span>37-165</span>
+                            <span>37-185</span>
+                            <span>88-356</span>
+                            <span>1500 plus</span>
+                            <span>1800</span>
+                            <span>2300 plus</span>
+                            <span>4000</span>
+                            <span>Glove Conector</span>
+                        </p>
                         
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
@@ -502,54 +572,23 @@ session_start();
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto4.jpg" alt="alternative">
+                            <img class="img-fluid image-marca" src="view/assets/edge.jpg" alt="alternative">
                         </div> <!-- end of image wrapper -->
-                        <p class="p-large"><strong>HyFlex 11-840</strong></p>
-                        <!-- <p class="job-title">Product Manager</p> -->
-                        
+                        <p class="job-title">
+                            <span>48-706</span>
+                            <span>48-711</span>
+                            <span>48-919</span>
+                            <span>48-929</span>
+                        </p>
                     </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-                    <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto5.jpg" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>HyFlex 74-048</strong></p>
-                        <!-- <p class="job-title">Business Developer</p> -->
-                       
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto6.jpg" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>AlphaTec 4000-122</strong></p>
-                        <!-- <p class="job-title">Business Developer</p> -->
-                       
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto7.jpg" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>AlphaTec 2300 PLUS</strong></p>
-                        <!-- <p class="job-title">Business Developer</p> -->
-                       
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="view/assets/producto8.jpg" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>AlphaTec 16-650 </strong></p>
-                        <!-- <p class="job-title">Business Developer</p> -->
-                       
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
+                            <img class="img-fluid image-marca" src="view/assets/gloves.jpg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="job-title">
+                            <span>R-297</span>
+                        </p>
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -562,63 +601,77 @@ session_start();
             <div class="row">
                 <div class="col-lg-6" id="booster">
                     <div class="image-container">
-                        <img class="img-fluid" src="view/images/testimonials-2-men-talking.svg" alt="alternative">
+                        <img class="img-fluid" src="view/assets/armadura.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    <h2>Booster de Poder</h2>
+                    <h2>Booster "Armadura de poder"</h2>
 
                     <!-- Card Slider -->
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body">
-                                            <p class="testimonial-text">Los más astutos luchadores conocerán el secreto de los Booster de poder,
-                                                que los ayudaran a lograr muchos más puntos</p>
-                                            <p class="testimonial-author">BOOSTER DE PODER</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Cada unidad que vendas se multiplicara x3, una ventaja que no puedes perder para ser parte de los ganadores.</p>
-                                            <p class="testimonial-author">ARMADURA DE PODER</p>
+                                            <p class="testimonial-author">Los trajes valen x3.</p>
+                                            <p class="testimonial-text">
+                                                Cada unidad que vendas de traje Alphatec, se multiplicarán 
+                                                    por 3. Una ventaja que no puedes perder para ser uno de los ganadores.<br>
+                                                <b>
+                                                    Puedes utilizar este beneficio tantas veces como quieras durante toda la aventura!  
+                                                </b>
+                                            </p>
+                                            <p class="text-samll">
+                                                El secreto de los Booste de poder, que los ayudarán a lograr muchos más puntos.
+                                            </p>
                                         </div>
                                     </div>        
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Ingresa a la plataforma al recibir el llamado via email, mira el video, realiza la prueba 
-                                                de conocimiento y gana la ventaja con 20 puntos.</p>
-                                            <p class="testimonial-author">EL ORÁCULO</p>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                               
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
                         </div> <!-- end of swiper-container -->
                     </div> <!-- end of slider-container -->
                     <!-- end of card slider -->
 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Booster "Oráculo"</h2>
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">
+                                                Ingresa a la plataforma de capacitación Ansell, al recibir via mail la 
+                                                invitacion del Oráculo, mira el video, realiza la prueba de conocimiento 
+                                                y gana la ventaja con <b>20 puntos</b> más por cada prueba en la que participes.<br>
+
+                                                <b>
+                                                    No te pierdas esta oportunidad de ganar más puntos!
+                                                </b>
+                                            </p>
+                                            <p class="text-samll">
+                                                Debes estar atento...<br>
+                                                Pues durante esta  misión, tendrás más Booster Secretos que estarán por tiempo limitado...
+                                            </p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+                <div class="col-lg-6" id="booster">
+                    <div class="image-container">
+                        <img class="img-fluid" src="view/assets/oraculo.png" alt="alternative">
+                    </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -632,90 +685,196 @@ session_start();
         <div class="container" id="premios">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Premios</h2>
-                    <p class="p-heading p-large">Estos son los premios que los mejores Superheroes se llevaran.</p>
+                    <h2>Recompensas</h2>
+                    <p class="p-heading p-large">Estos son los premios que los mejores Superhéroes se llevaran.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="label">
+                    <div class="card primero">
+                        <!-- <div class="label">
                             <p class="best-value">Superhéroe Gema Dorada</p>
-                        </div>
+                        </div> -->
                         <div class="card-body premios">
-                            <img src="view/assets/premio1.jpg">
-                            <div class="button-wrapper">
+                            <img src="view/assets/1.png">
+                            <!-- <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div> <!-- end of card -->
-                    <!-- end of card -->
-
-                    <!-- Card-->
                     <div class="card">
-                        
                         <div class="card-body premios">
-                            <img src="view/assets/premio2.jpg">
-                            <div class="button-wrapper">
+                            <img src="view/assets/2.png" class="patin">
+                            <!-- <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
+                            </div> -->
                         </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
+                    </div>
 
+                    <div class="card">
+                        <div class="card-body premios">
+                            <img src="view/assets/3.png" class="bici">
+                            <!-- <div class="button-wrapper">
+                                <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
+                            </div> -->
+                        </div>
+                    </div>
                     <!-- Card-->
                     <div class="card">
                         
                         <div class="card-body premios">
                             
-                            <img src="view/assets/premio3.jpg">
-                            <div class="button-wrapper">
+                            <img src="view/assets/5.png">
+                            <!-- <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
+                            </div> -->
                         </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-                    <!-- Card-->
+                    </div> 
+                    
                     <div class="card">
+                        
                         <div class="card-body premios">
-                            <img src="view/assets/premio4.jpg">
-                            <div class="button-wrapper">
+                            <img src="view/assets/4.png" class="spa">
+                            <!-- <div class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
+                            </div> -->
                         </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="card-body premios">
-                            <img src="view/assets/premio5.jpg">
-                            <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
-                        </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="card-body premios">
-                            <img src="view/assets/premio6.jpg">
-                            <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="#request">INSCRIBIRME</a>
-                            </div>
-                        </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-
+                    </div>
+                  
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-2 -->
     <!-- end of pricing -->
 
-
     
+    <!-- Contact -->
+    <div id="puntos" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-puntos">Tus Puntos</h2>
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row justify-content-lg-around">
+                
+                <div class="col-md-6 col-lg-4">
+                        <div class="text-container ">
+                            <h3 class="text-end">HOLA LUCHADOR<br> <span class="h1 font-weight-bold turquoise" id="name">JUAN</span></h3>
+                            <!-- <p class="p-large">Use Evolo free landing page template to promote your business startup and generate leads for the offered services</p> -->
+                        </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="text-container">
+                        <h3>EN ESTA AVENTURA AL MES <br><span class="h1 font-weight-bold turquoise" id="month">SEPTIEMBRE</span></h3>
+                    </div>
+                    <div class="text-container">
+                        <h3>TUS PUNTOS ACUMULADOS SON:<br> <span class="h1 font-weight-bold turquoise" id="points">100</span></h3>
+                    </div>
+                    
+                </div>
+                 <!-- end of col -->
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-8">
+                    <div class="text-container">
+                        <h5 class="text-center">ASI VA EN ESTA AVENTURA EL TOP 10 DE LOS HÉROES</h5>
+                    </div>
+                    <div class="map-responsive">
+                        <table class="table table-primary table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">PUESTO</th>
+                                <th scope="col">NOMBRE</th>
+                                <th scope="col">PUNTOS</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>Otto Rage</td>
+                                <td>12</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-fluid" src="view/assets/puntos.jpg">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-10 mx-auto">
+                    <div class="text-container">
+                        <p class="p-large fs-2 font-weight-bold">
+                            Vas por muy buen camino...<br>
+                            Sigue luchando y acumulando más puntos para que seas parte de los 5 Superhéroes y 
+                            recuperes una de las gemas y así ganar muchos premios.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
 
     <!-- Contact -->
     <div id="contact" class="form-2">
@@ -723,12 +882,12 @@ session_start();
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h2>Contactanos</h2>
+                    <h2>¿Tienes dudas?</h2>
                     <ul class="list-unstyled li-space-lg">
-                        <li class="address">Tienes dudas sobre tus puntos o talvez preguntas sobre como puedes utilizar los Booster?<br> Escríbenos, estamos atentos para solucionar todas tus dudas.</li>
-                        <li>Contáctanos <i class="fas fa-envelope"></i><a class="turquoise" href="mailto:office@evolo.com">laaventuradelguatedepoder@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+57 3204808870</a></li>
-                        <li></li>
+                        <li class="address">Si tienes dudas sobre esta aventura, diligencia el formulario y estaremos 
+                            dando respuesta en el menos tiempo posible.
+                        </li>
+                        
                         
                     </ul>
                 </div> <!-- end of col -->
@@ -739,22 +898,24 @@ session_start();
                     
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nombre y Apellido</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control-input" id="cnumber" required>
+                            <label class="label-control" for="cnumber">Teléfono</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
                         
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="cemail" required>
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control-input" id="cnumber" required>
-                            <label class="label-control" for="cnumber">Telefono</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control-input" id="cpass" required>
-                            <label class="label-control" for="cpass">Telefono</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
+                        
+                        
                         <div class="form-group">
                             <textarea class="form-control-textarea" id="cmessage" required></textarea>
                             <label class="label-control" for="cmessage">Tu mensaje</label>
@@ -779,17 +940,22 @@ session_start();
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
 
-
-  
-
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2021 <a href="#">Ansell Colombia</a> - Todos los derechos reservados</p>
+                    <p class="p-small">
+                        Contáctanos <a class="turquoise" href="mailto:laaventuradelguatedepoder@gmail.com">laaventuradelguatedepoder@gmail.com</a> 
+                        o al Whatsapp: +57 320 480 8870
+                    </p>
                 </div> <!-- end of col -->
+                <div class="col-lg-12">
+                    <p class="p-small">
+                        Esta página está diseñada exclusivamente para el uso de los vendedores del canal B2B de Ansell Colombia. Al inscribirse, visitarla e interactuar en ella usted acepta los <a class="turquoise" id="pdf3">términos y condiciones</a> de la misma y la <a class="turquoise" href="https://www.ansell.com/us/en/legal/privacy-policy">política de datos</a> de la empresa Ansell S.A. Está web gestionada a través de un tercero Ecosistemas Creativos, quien diseño el programa y desarrolla la logística del mismo. Cualquier duda sobre la productos, pedidos o referente a los productos Ansell, contácte a su 
+                        representante de Ansell en Colombia.
+                    </p>
+                </div>
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
@@ -809,15 +975,15 @@ session_start();
 		<div class="container-login">
 
 			<div class="login-content">
-				<form class="form-log" method="post">
+				<form class="form-log">
 					<h2 class="title">Bienvenidos</h2>
 					<div class="input-div one">
 					<div class="i">
 							<i class="fas fa-user"></i>
 					</div>
 					<div class="div">
-							<h5>Usuario</h5>
-							<input type="number" class="input" name="txtUsuarioLogin">
+							<h5>Código</h5>
+							<input type="number" class="input">
 					</div>
 					</div>
 					<div class="input-div pass">
@@ -825,17 +991,13 @@ session_start();
 							<i class="fas fa-lock"></i>
 					</div>
 					<div class="div">
-							<h5>Contraseña</h5>
-							<input type="number" class="input" name="txtPassLogin">
+							<h5>Cédula</h5>
+							<input type="number" class="input">
 					</div>
 					</div>
 					<a class="a-log">Olvidaste tu contraseña?</a>
-					<input type="submit" class="btn-log" value="ENTRAR">
+					<input type="submit" class="btn-log" >
 				</form>
-                <?php
-                    $dataLogin = new CPrincipalController();
-                    $resultLogin = $dataLogin->ctrLogin();
-                ?>
 			</div>
 		</div>
 	</div>
@@ -851,5 +1013,6 @@ session_start();
     <script src="view/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="view/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="view/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

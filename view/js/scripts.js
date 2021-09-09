@@ -161,7 +161,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             rformError();
-            rsubmitMSG(false, "¡Por favor llena todos los espacios!");
+            rsubmitMSG(false, "Please fill all fields!");
         } else {
             // everything looks good!
             event.preventDefault();
