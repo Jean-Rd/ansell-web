@@ -3,6 +3,9 @@
    Created: June 2019
    Description: Master CSS file
 */
+#puntos {
+	display: none;
+}
 
 /*****************************************
 Table Of Contents:
@@ -2353,7 +2356,6 @@ a:hover.back-to-top {
 
 	/* Contact */
 	.form-2 .map-responsive {
-		max-width: 31rem;
 		margin-right: auto;
 		margin-left: auto;
 	}
